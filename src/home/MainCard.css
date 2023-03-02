@@ -1,0 +1,130 @@
+
+.card-container{
+    max-width: 160px;
+    /* min-width: 160px; */
+    background-color: black;
+    margin-bottom: 10px;
+      
+}
+
+.card-image{
+    width: 100%;
+}
+
+.card-image img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+
+} 
+
+ .release{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px auto;
+    padding: 0 4px;
+}
+.release-date{
+    font-size: 12px;
+    color: #e90101;;
+}
+
+.date{
+    font-size: 12px;
+    color: rgba(255, 255, 255)
+}
+
+#movie-name{
+    display: inline;
+    color: rgba(255, 255, 255);
+    font-size: small;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 10px;
+    top: -5px;
+    left: 4px;
+}
+
+
+
+.card-container:hover  #movie-name{
+    border-bottom: 2px solid rgba(255, 255, 255);
+}
+.card-info{
+    width: 100%;
+}
+
+.card-image{
+    position: relative;
+    cursor: pointer;
+
+}
+.card-image::after{
+ content: '';
+ position: absolute;   
+ transition: 0.5s ease;   
+ height: 100%;   
+ width: 100%;   
+ top: 0;   
+ left: 0;   
+ background-color: rgb(6, 8, 8);   
+opacity: 0;  
+}   
+ 
+.card-image:hover::after{   
+    opacity: 0.5;   
+   }
+
+
+
+
+.navlink{
+    text-decoration: none;
+}
+
+@media screen and (max-width:768px){
+    
+    .release-date,.date, #movie-name{
+        font-size: 18px;
+    }
+
+}
+
+
+@media screen and (min-width:768px) and (max-width:830px){
+
+    
+    .card-container{
+        max-width: 300px;
+    /* min-width: 160px; */
+    margin-bottom: 100px;
+         
+    }
+
+
+    .release-date,.date, #movie-name{
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width:830px) and (max-width:1050px){
+
+    
+    .card-container{
+    max-width: 400px;
+    /* min-width: 160px; */
+    margin-bottom: 100px;   
+    }
+
+
+    .release-date,.date, #movie-name{
+        font-size: 50px;
+    }
+
+}
+
+
+
+
+

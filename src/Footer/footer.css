@@ -1,0 +1,97 @@
+.Footer-container{
+    background-color: #28282d;
+    box-shadow: 0 5px 25px 0 rgb(0 0 0 / 30%);
+    display: block;
+    overflow: hidden;
+    padding: 40px 0 50px;
+    position: relative;
+}
+
+#follow-us{
+    margin: 0;
+    text-align: center;
+    color: azure;
+}
+
+.socialIconsList{
+    display: flex;
+    justify-content: center;
+}
+
+.socialIconsList li{
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: top;
+    list-style-type: none;
+   margin-top: 15px;
+}
+
+.socialIconsList li a{
+    background-image: linear-gradient(90deg,#ff55a5,#ff5860);
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgb(255 88 96 / 50%);
+    color: #fff;
+    display: block;
+    font-weight: 500;
+    padding: 10px 15px;
+}
+
+.Footer-container::before {
+    background-image: linear-gradient(90deg,#ff55a5,#ff5860);
+    box-shadow: 0 0 20px 0 rgb(255 88 96 / 50%);
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.footerCopyright{
+    border-top: 1px solid hsla(0,0%,100%,.06);
+    margin-top: 50px;
+    padding-top: 30px;
+    text-align: center;
+}
+.footerCopyright p{
+    color: hsla(0,0%,100%,.6);
+    font-size: 14px;
+}
+
+.socialIconsList li a:hover {
+    background: #fff;
+    color: #ff5860;
+
+}
+
+
+@media screen and (max-width:575px){
+    
+   .socialIconsList{
+        flex-wrap: wrap;
+        justify-content: center;
+       gap: 8px;
+    }
+
+}
+
+@media screen and (min-width:830px) and (max-width:1050px){
+
+    .socialIconsList{
+        flex-wrap: wrap;
+        justify-content: center;
+       gap: 20px;
+    }
+     
+    .footerCopyright p{
+        font-size: 40px;  
+        
+    }
+
+    .socialIconsList li a{   
+        font-size: 40px;  
+    }
+
+}
+

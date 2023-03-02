@@ -1,0 +1,36 @@
+ .home-container{
+   
+    margin: 0 4vw;
+   
+    
+}
+
+.main-heading{
+    margin: 40px auto 5px;  
+    text-align: center;
+}
+
+.heading-info{
+   
+    text-align: center;
+       
+}
+
+.main-card{
+    margin-top: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+} 
+
+@media screen and (max-width:1050px) {
+    .main-card{
+       display: flex;
+       justify-content: center;
+    }
+}
+
+
+
+
